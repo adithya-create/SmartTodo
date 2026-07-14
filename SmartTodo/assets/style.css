@@ -1,0 +1,132 @@
+/* Import Premium Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Typography Overrides */
+html, body, [class*="css"], .stText, .stMarkdown {
+    font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Metric Cards Custom Glassmorphic Styling */
+div[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 20px 24px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Light Theme Adjustments for Metrics */
+@media (prefers-color-scheme: light) {
+    div[data-testid="stMetric"] {
+        background: rgba(0, 0, 0, 0.02);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+    }
+    div[data-testid="stMetric"]:hover {
+        background: rgba(0, 0, 0, 0.04);
+        border-color: rgba(0, 0, 0, 0.12);
+        box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Custom UI Cards */
+.glass-container {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Task Container Item */
+.task-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.task-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+}
+
+/* Badge styling */
+.p-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 8px;
+}
+
+/* Sidebar Styling Details */
+section[data-testid="stSidebar"] {
+    background-color: rgba(20, 20, 25, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Streamlit button customizations */
+div.stButton > button {
+    border-radius: 8px !important;
+    transition: all 0.2s ease-in-out !important;
+    font-weight: 500 !important;
+}
+
+div.stButton > button:hover {
+    transform: scale(1.02);
+}
+
+/* Timeline Logs */
+.timeline-wrapper {
+    margin-left: 10px;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 0 10px 20px;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #00E676;
+    border: 2px solid #121212;
+}
+
+.timeline-event.event-create::before { background: #2196F3; }
+.timeline-event.event-update::before { background: #FF9800; }
+.timeline-event.event-delete::before { background: #FF5252; }
+.timeline-event.event-restore::before { background: #9C27B0; }
+.timeline-event.event-complete::before { background: #4CAF50; }
+.timeline-event.event-reopen::before { background: #E91E63; }

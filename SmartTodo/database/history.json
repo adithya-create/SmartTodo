@@ -1,0 +1,42 @@
+[
+    {
+        "id": "5ccd9f73-75e1-4a81-ac61-2ea13f239366",
+        "timestamp": "2026-07-14T21:44:28.599130",
+        "action": "Task Restored",
+        "task_id": "2ff486f2-1eaa-4d23-9ce6-c12193c2ff3f",
+        "task_title": "Register for marathon",
+        "description": "Complete the 10k race sign-up page online.",
+        "previous_status": "Deleted",
+        "current_status": "Pending"
+    },
+    {
+        "id": "1108f901-6f8e-4e68-9b2b-8e67d892359f",
+        "timestamp": "2026-07-14T21:44:28.529242",
+        "action": "Task Deleted",
+        "task_id": "2ff486f2-1eaa-4d23-9ce6-c12193c2ff3f",
+        "task_title": "Register for marathon",
+        "description": "Complete the 10k race sign-up page online.",
+        "previous_status": "Completed",
+        "current_status": "Deleted"
+    },
+    {
+        "id": "73b7b862-f88c-483a-b3a5-ea5b0b008575",
+        "timestamp": "2026-07-14T21:44:28.457454",
+        "action": "Task Completed",
+        "task_id": "2ff486f2-1eaa-4d23-9ce6-c12193c2ff3f",
+        "task_title": "Register for marathon",
+        "description": "Complete the 10k race sign-up page online.",
+        "previous_status": "Pending",
+        "current_status": "Completed"
+    },
+    {
+        "id": "d352aea5-0155-4000-84ee-6f0c23c28b57",
+        "timestamp": "2026-07-14T21:44:28.324686",
+        "action": "Task Created",
+        "task_id": "2ff486f2-1eaa-4d23-9ce6-c12193c2ff3f",
+        "task_title": "Register for marathon",
+        "description": "Complete the 10k race sign-up page online.",
+        "previous_status": null,
+        "current_status": "Pending"
+    }
+]
